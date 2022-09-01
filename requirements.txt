@@ -1,0 +1,7 @@
+discord==1.7.3
+requests==2.28.1
+aiohttp==3.7.4.post0
+colorama==0.4.5
+discord.py==1.7.3
+pypresence==4.2.1
+httpx==0.23.0
