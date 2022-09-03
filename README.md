@@ -16,7 +16,7 @@ src="https://camo.githubusercontent.com/4b028e8e841f57ee96b472fa88ea7ed66ddd3720
 - Added Proxy support<br>
 - Commands - Banall, kickall, prune, masschannels, nuke<br>
 - Prefect Nuke command trash a whole server with single cmd <br>
-- Autocreate config.json<br>
+- Autocreate config.json <br>
 <br />
 
 ## How To use
