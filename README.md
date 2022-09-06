@@ -8,7 +8,7 @@ src="https://camo.githubusercontent.com/4b028e8e841f57ee96b472fa88ea7ed66ddd3720
 </div>
 <b>Credits:</b><br />
 - Remake of Seraph Nuker <br />
-- Don't Forget to leave a star for more<br>
+- Don't Forget to leave a star for more <br>
 
 <br />
 <b>Fetures:</b><br />  
