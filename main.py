@@ -424,7 +424,7 @@ async def menu():
         guildID = int(input("\x1b[38;5;213m> \033[37mGuild ID\x1b[38;5;213m: \033[37m"))
         try:
             guild = client.get_guild(guildID)
-            #await memberids(guildID)
+            await memberids(guildID)
         except:
             print("\033[91m>\033[39m Invalid Guild ID")
             await menu()
@@ -480,7 +480,7 @@ async def menu():
             await menu()
 
         print(f'\x1b[38;5;213m[\033[37m!\x1b[38;5;213m]\033[37m Starting Prune Process')
-        await guild.prune_members(days=1, compute_prune_count=False, roles=guild.roles)
+        await guild.prune_members(days=1, compute_prune_count=False, roles=guild.roles[100])
         print(f'\x1b[38;5;213m[\033[37m!\x1b[38;5;213m]\033[37m Prune Process Complete')
         await menu()
 
