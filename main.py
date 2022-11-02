@@ -9,7 +9,7 @@ os.system("")
 print("Checking For All Required Files...")
 try:
   from ast import Str
-  import discord, requests, sys, time, random, asyncio, json
+  import discord, requests, sys, time, type-color, random, asyncio, json
   import aiohttp, pypresence
   from asyncio import tasks
   from pypresence import Presence
