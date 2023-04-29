@@ -8,18 +8,12 @@ os.system("")
 
 print("Checking For All Required Files...")
 try:
-  from ast import Str
   import discord, requests, sys, time, random, asyncio, json
-  import aiohttp, pypresence
-  from asyncio import tasks
   from pypresence import Presence
   from threading import Thread
-  from discord.utils import find, get
   from discord.ext import commands
-  from time import strftime, gmtime
-  from discord import Webhook
   from colorama import Fore, Style
-  import httpx
+  from concurrent.futures import ThreadPoolExecutor
 except:
   print("[!] Missing dependencies, please install all dependencies")
   print("Use \x1b[38;5;213mpip install -r requirements.txt\033[37m to install all dependencies")
@@ -375,7 +369,7 @@ async def menu():
         guildID = int(input("\x1b[38;5;213m> \033[37mGuild ID\x1b[38;5;213m: \033[37m"))
         try:
             guild = client.get_guild(guildID)
-            await memberids(guildID)
+            # await memberids(guildID)
         except:
             print("\033[91m>\033[39m Invalid Guild ID")
             await menu()
@@ -393,8 +387,11 @@ async def menu():
         members_1 = []
         members_2 = []
         members_3 = []
+        members_4 = []
+        members_5 = []
+        members_6 = []
         total = len(mainMembers)
-        members_per_arrary = round(total/3)
+        members_per_arrary = round(total/6)
         
         for member in mainMembers:
             if len(members_1) != members_per_arrary:
@@ -406,12 +403,26 @@ async def menu():
                     if len(members_3) != members_per_arrary:
                         members_3.append(member)
                     else:
-                        pass
+                        if len(members_4) != members_per_arrary:
+                            members_4.append(member)
+                        else:
+                            if len(members_5) != members_per_arrary:
+                                members_5.append(member)
+                            else:
+                                if len(members_6) != members_per_arrary:
+                                    members_6.append(member)
+                                else:
+                                    pass
+        print(f"\x1b[38;5;213m[\033[37m!\x1b[38;5;213m]\033[37m Total Members: {total}")
         while True:
             #try:
             Thread(target=Seesh.Ban, args=(guild.id, members_1[num],)).start()
             Thread(target=Seesh.Ban, args=(guild.id, members_2[num],)).start()
             Thread(target=Seesh.Ban, args=(guild.id, members_3[num],)).start()
+            Thread(target=Seesh.Ban, args=(guild.id, members_4[num],)).start()
+            Thread(target=Seesh.Ban, args=(guild.id, members_5[num],)).start()
+            Thread(target=Seesh.Ban, args=(guild.id, members_6[num],)).start()
+
             num += 1
             #except IndexError:
                 #break
@@ -424,7 +435,7 @@ async def menu():
         guildID = int(input("\x1b[38;5;213m> \033[37mGuild ID\x1b[38;5;213m: \033[37m"))
         try:
             guild = client.get_guild(guildID)
-            await memberids(guildID)
+            # await memberids(guildID)
         except:
             print("\033[91m>\033[39m Invalid Guild ID")
             await menu()
