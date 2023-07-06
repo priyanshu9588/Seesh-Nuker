@@ -7,8 +7,7 @@ src="https://camo.githubusercontent.com/4b028e8e841f57ee96b472fa88ea7ed66ddd3720
 <h1>Seesh-Nuker</h1><br>
 </div>
 <b>Credits:</b><br />
-- Remake of Seraph Nuker <br />
-- Don't Forget to leave a star for more<br>
+- HarsH <br />
 
 <br />
 <b>Fetures:</b><br />  
@@ -28,3 +27,6 @@ python main.py OR python3 main.py
 
 ## Screenshot:  <br>
 <img src="https://media.discordapp.net/attachments/998749869848154122/1014912627140468736/unknown.png?width=608&height=319"></img><br>
+
+## Skiders 
+[nt/ht Sourav](https://discord.com/users/1103347384358031431)
