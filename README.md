@@ -6,8 +6,6 @@ src="https://camo.githubusercontent.com/4b028e8e841f57ee96b472fa88ea7ed66ddd3720
 ></img>
 <h1>Seesh-Nuker</h1><br>
 </div>
-<b>Credits:</b><br />
-- HarsH <br />
 
 <br />
 <b>Fetures:</b><br />  
