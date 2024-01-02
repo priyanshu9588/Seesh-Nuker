@@ -26,5 +26,4 @@ python main.py OR python3 main.py
 ## Screenshot:  <br>
 <img src="https://media.discordapp.net/attachments/998749869848154122/1014912627140468736/unknown.png?width=608&height=319"></img><br>
 
-## Skiders 
-[nt/ht Sourav](https://discord.com/users/1103347384358031431)
+# This is a modified version of seraph-nuker
